@@ -3,10 +3,23 @@
   font-size:medium;
   font-weight: bold;
   font-family:monospace;
-
+  font-style:italic;
   /* animation-name: example;
       animation-duration: 4s;
         transition:all 2s; */
+}
+
+
+span:hover{
+  background-color:yellow;
+  font-size:medium;
+  font-weight: bold;
+  font-family:monospace;
+  font-style:italic;
+}
+
+input:focus{
+  background-color:yellow;
 }
 
 .normalConent{
