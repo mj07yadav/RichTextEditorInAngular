@@ -10,6 +10,16 @@
 }
 
 
+/* selected section on the preview will looks like it will come in front */
+.selectedParagraph{
+  box-shadow: 1px 6px 14px 4px #000000a8;
+}
+
+/* if no section is selected */
+.normalParagraph{
+
+}
+
 span:hover{
   background-color:yellow;
   font-size:medium;
@@ -17,6 +27,8 @@ span:hover{
   font-family:monospace;
   font-style:italic;
 }
+
+
 
 input:focus{
   background-color:yellow;
@@ -33,9 +45,38 @@ input:focus{
   scroll-behavior: smooth;
 }
 
+.btn-primary {
+  background-color:#338e53;
+  border:#338e53;
+}
 
+
+
+/* scroll-bar design  */
 /*
 @keyframes example {
   0%   { background-color:rgb(241, 238, 157)}
  100% { background-color:yellow}
 } */
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  visibility: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #008e52;
+}

@@ -1,6 +1,7 @@
-import { Component, ViewChild, OnInit } from "@angular/core";
+import { Component, ViewChild, OnInit, ViewContainerRef, ElementRef } from "@angular/core";
 import { FormGroup, FormControl } from "@angular/forms";
 import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
+import { Subscription } from 'rxjs/internal/Subscription';
 
 
 
@@ -12,7 +13,7 @@ import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/t
 export class AppComponent implements OnInit{
 
   ngOnInit(): void {
-    // document.getElementById("doithere").innerHTML +=  this.elemnt;
+
   }
 
 }

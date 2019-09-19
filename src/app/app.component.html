@@ -1,46 +1,24 @@
-<!-- <div class="container">
-  <div class="row">
-    <div class="col-4" style="background-color:rgb(182, 253, 253) ; height:300px ; margin-right:10px ; margin-top : 20px">
-      <div > -->
-        <!-- <form [formGroup]="formGrouphere"> -->
-          <!-- <div *ngFor="let variablearrayelement of variablearray; let i = index">
-            Go To {{i}}<input  id="button{{(i)}}" [(ngModel)]="variablearray[i]" (focus)="scrollToThatElement(i)" />
-          </div> -->
-      <!-- <button class="btn btn-primary" id="button2" (click)="scrollToThatElement(1)">Go 2</button>
-      <button class="btn btn-primary" id="button3" (click)="scrollToThatElement(2)">Go 3</button>
-      <button class="btn btn-primary" id="button13" (click)="scrollToThatElement(12)">Go 13</button> -->
-    <!-- </form> -->
-    <!-- </div>
-    </div>
-    <div id="doithere" class="col-7" style="background-color:rgb(215, 215, 223) ; height : 800px ; margin-top:20px;overflow-y: auto;">
-      <div class="row" *ngFor="let divarrayelement of divarray ; let i = index">
-        <div class="col">
 
-          <div  id="{{divarrayelement}}" [ngClass]="statusarray[i] ? 'selectedComponent' : 'normalConent'">
-            <h4> Section {{(i+1)}} </h4>
-            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                <span  class="variable_vide" *ngIf="variablearray[i] === ''">________</span>
-                <span  class="variable_vide" *ngIf="variablearray[i] != ''">{{variablearray[i]}}</span>
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electroni</p>
-          </div>
-        </div>
+<div class="navigationbar">
+  <div class="container-fluid">
+    <div class="row" style="height: 70px;
+    color: white;
+    background-color: #008e52;box-shadow: -1px 12px 17px 0px #00000096;">
+      <div class="col-12"> <h1 style="margin-top: 5px;
+        text-decoration: underline;
+        font-style: italic;
+        font-weight: bold;
+        font-family: none;">Company Name</h1></div>
+    </div>
+    <div class="row" style="margin-top:5px;">
+      <div class="col-1"></div>
+      <div class="col-10">
+        <!-- <app-runtime-component></app-runtime-component> -->
+        <router-outlet></router-outlet>
       </div>
+      <!-- <div></div> -->
+        <!-- <app-anotherruntime></app-anotherruntime> -->
+      <div class="col-1"></div>
+    </div>
     </div>
   </div>
-</div> -->
-
-<app-runtime-component></app-runtime-component>
-
-
-<!--
-<div class="row" *ngFor="let divarrayelement of divarray ; let i = index">
-  <div class="col">
-
-    <div  id="{{divarray[1]}}" [ngClass]="statusarray[i] ? 'selectedComponent' : 'normalConent'">
-      <h4> Section {{(i+1)}} </h4>
-      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          <span  class="variable_vide">________</span>
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electroni</p>
-    </div>
-  </div>
-</div> -->

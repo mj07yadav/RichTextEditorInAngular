@@ -1,0 +1,38 @@
+<div class="row" style='margin-top:10px'>
+  <div class="col-2"></div>
+  <div class="col-8" style="text-align:center">
+    <div >
+      <div style="border-radius: 17px;
+      border: solid 10px #338e53;">
+      <webcam  [height]="500" [width]="500" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
+        *ngIf="showWebcam" [allowCameraSwitch]="allowCameraSwitch" [switchCamera]="nextWebcamObservable"
+        [videoOptions]="videoOptions" (cameraSwitched)="cameraWasSwitched($event)"
+        (initError)="handleInitError($event)" ></webcam>
+      </div>
+      <br />
+      <div class="row" style="text-align:center">
+        <div class="col" style="margin-bottom: 10px;">
+      <button class="btn btn-primary" style="margin-right: 13px;" (click)="triggerSnapshot();" title="Take Picture"><span style="padding-right: 19px;">Take Photo </span><i class="material-icons">
+          camera
+        </i></button>
+      <button class="btn btn-primary" (click)="showNextWebcam(true);" title="Switch Camera"><span style="padding-right: 19px;">Switch Camera </span><i class="material-icons">switch_camera</i></button>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="col-2"></div>
+  </div>
+
+  <!-- <h4 *ngIf="errors.length > 0">Messages:</h4>
+  <ul *ngFor="let error of errors">
+    <li>{{error | json}}</li>
+  </ul> -->
+  <div class="row">
+    <div class="col-2" style="margin-top:7px"></div>
+    <div class="snapshot" *ngIf="pictureTaken">
+      <div class="col-8" style="margin-top:7px ;float:right">
+        <img [src]="pictureTaken.imageAsDataUrl" style="height: 30vh;width: 100%; border:5px solid #338e53 ; border-radius:10px" />
+      </div>
+    </div>
+    <div class="col-2" style="margin-top:7px "></div>
+  </div>
